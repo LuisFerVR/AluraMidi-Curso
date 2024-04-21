@@ -1,12 +1,18 @@
 function reproducirSonido (idElementoAudio) {
     document.querySelector(idElementoAudio).play();
 }
-let listaDeTeclas = document.querySelectorAll(".tecla");
+
+const listaDeTeclas = document.querySelectorAll(".tecla");
 let contador = 0;
 
 while(contador < 9){
-    listaDeTeclas[contador].onclick = function(){
-        reproducirSonido('#idElemento');
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    const idAudio = `#sonido_${instrumento}`;
+
+    tecla.onclick = function(){
+        reproducirSonido(idAudio);
     };
+    
     contador += 1;
 }
