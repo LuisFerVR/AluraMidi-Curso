@@ -23,5 +23,8 @@ Descarga el código que necesites seleccionando la Branch dentro de este reposit
 - [Alura Latam](https://www.aluracursos.com/) 
 - [Instructora: Jeanmarie Quijada](https://github.com/JeanmarieAluraLatam) 
 
+## Comenzando Dev-Notes🚀
+Con querySelector puedes obtener cualquier objeto del DOM (elemento) , y si quieres guardar la referencia de una función debes quitar los parentesis al final de su llamado, ya que estos la reproducen inmediatamente
 
+Ej: document.querySelector('.tecla__pomp').onclick = nombreDeLaFuncion
 
