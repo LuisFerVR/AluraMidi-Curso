@@ -1,10 +1,12 @@
-function pomp () {
-    document.querySelector('#sonido_tecla_pom').play();
+function reproducirSonido (idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
 }
+let listaDeTeclas = document.querySelectorAll(".tecla");
+let contador = 0;
 
-document.querySelector('.tecla_pom').onclick=pomp;
-
-const listaDeTeclas = document.querySelectorAll('.tecla');
-listaDeTeclas.forEach(function (tecla) {
-    console.log(tecla);
-});
+while(contador < 9){
+    listaDeTeclas[contador].onclick = function(){
+        reproducirSonido('#idElemento');
+    };
+    contador += 1;
+}
