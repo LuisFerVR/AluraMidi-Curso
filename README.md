@@ -28,3 +28,8 @@ Con querySelector puedes obtener cualquier objeto del DOM (elemento) , y si quie
 
 Ej: document.querySelector('.tecla__pomp').onclick = nombreDeLaFuncion
 
+Las funciones anónimas se usan cuando quieres que ante un evento se realice algo.
+el parámetro evento de las funciones anónimas captura los eventos del teclado. Por ejemplo:
+evento.code y permite  saber la tecla presionada y realizar algo con ella, ejemplo:
+evento.code === 'Space'.
+
